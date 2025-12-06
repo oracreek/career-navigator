@@ -25,7 +25,7 @@
   - CORS handling
 - ✅ **Error Handling** - Comprehensive try/catch blocks
 
-### Frontend (60% Complete)
+### Frontend (75% Complete)
 
 #### ✅ Core Infrastructure (100%)
 - React + Vite setup
@@ -34,7 +34,7 @@
 - Global styles
 - Responsive layout system
 
-#### ✅ Completed Components (40%)
+#### ✅ Completed Components (60%)
 
 **Dashboard (100%)**
 - Application statistics
@@ -57,19 +57,23 @@
 - Page layout
 - Routing
 
+**ApplicationDetail (100%)**
+- Complete tabbed interface with 4 tabs:
+  1. Summary tab - displays AI summary, job description, perspectives
+  2. Resume tab - Markdown editor with preview toggle, auto-save, version history
+  3. Practice Interview tab - AI-generated questions with suggested answers
+  4. Interview Notes tab - split view with practice reference and notes editor
+- Status management dropdown
+- Delete application with confirmation
+- Auto-save for resume and notes (3-second debounce)
+- Full loading and error states
+- Responsive design
+
 #### ⚠️ Stub Components (Need Implementation)
 
 **PositionsManager (20%)**
 - Basic structure exists
 - Needs: CRUD forms, list view, perspective tagging UI
-
-**ApplicationDetail (10%)**
-- Route exists
-- Needs: Tabbed interface with:
-  - Summary display
-  - Resume editor with live preview
-  - Practice interview viewer
-  - Interview notes editor
 
 **ApplicationsList (10%)**
 - Route exists
@@ -87,16 +91,16 @@
 
 ### Lines of Code
 - Backend: ~2,500 lines
-- Frontend: ~1,200 lines (including stubs)
+- Frontend: ~2,500 lines
 - Database Schema: ~450 lines
 - Documentation: ~3,000 lines
-- **Total: ~7,150 lines**
+- **Total: ~8,450 lines**
 
 ### Files Created
 - Backend: 15 files
-- Frontend: 12 files
+- Frontend: 14 files
 - Documentation: 4 files
-- **Total: 31 files**
+- **Total: 33 files**
 
 ### Test Coverage
 - Backend: Manual API testing (curl commands provided)
@@ -119,23 +123,20 @@
 
 ⚠️ **Missing for Full MVP:**
 1. Complete position management UI
-2. Resume editor with live Markdown preview
-3. Practice interview detailed viewer
-4. Interview notes interface
-5. Application detail tabs
+2. Applications list view
+3. Search interface
+4. Settings/prompt management
 
 ### Time to Complete MVP
-Estimated: **8-12 hours of development**
+Estimated: **4-6 hours of development**
 
-**Priority 1 (4-6 hours):**
-- ApplicationDetail with tabs (3 hours)
-- Resume editor with preview (2 hours)
-- Practice interview viewer (1 hour)
-
-**Priority 2 (4-6 hours):**
+**Priority 1 (2-3 hours):**
 - PositionsManager complete (2 hours)
-- Interview notes editor (2 hours)
 - ApplicationsList (1 hour)
+
+**Priority 2 (2-3 hours):**
+- SearchView (1 hour)
+- SettingsView (1 hour)
 - Polish and bug fixes (1 hour)
 
 ## 🚀 Quick Start Guide
@@ -296,9 +297,9 @@ See SETUP.md for more component examples.
 ## 📈 Next Steps
 
 ### Immediate (This Week)
-1. Complete ApplicationDetail component
-2. Add resume Markdown editor
-3. Display practice interviews
+1. ✅ Complete ApplicationDetail component
+2. Complete PositionsManager CRUD UI
+3. Add ApplicationsList view
 4. Test with real job applications
 
 ### Short Term (This Month)
@@ -319,9 +320,9 @@ See SETUP.md for more component examples.
 
 **Development Investment:**
 - Backend: ~12 hours (complete)
-- Frontend: ~8 hours (60% complete)
+- Frontend: ~12 hours (75% complete)
 - Documentation: ~4 hours
-- **Total: ~24 hours**
+- **Total: ~28 hours**
 
 **Ongoing Costs (Monthly):**
 - Cloudflare Workers: $0 (free tier)
@@ -336,14 +337,14 @@ The MVP is successful when:
 - ✅ User can add work history
 - ✅ User can create applications
 - ✅ AI generates targeted summaries
-- ⚠️  User can edit resumes with preview (stub exists)
+- ✅ User can edit resumes with preview
 - ✅ AI generates practice interviews
-- ⚠️  User can take interview notes (stub exists)
+- ✅ User can take interview notes
 - ⚠️  User can view all applications (basic list exists)
 - ⚠️  User can search applications (backend ready)
 
-**Current: 5/8 criteria met (62.5%)**
-**To MVP: Complete 3 remaining criteria**
+**Current: 6/8 criteria met (75%)**
+**To MVP: Complete 2 remaining criteria**
 
 ## 📚 Documentation Quality
 
@@ -367,4 +368,6 @@ The MVP is successful when:
 
 ---
 
-**Ready to complete the MVP?** Start with ApplicationDetail.jsx - it's the most impactful remaining component.
+**Last Updated:** December 6, 2024
+**Recent Completion:** ApplicationDetail.jsx - Full tabbed interface with all features (682 lines)
+**Next Priority:** PositionsManager - Complete CRUD forms and list view

@@ -3,7 +3,8 @@ import './App.css';
 import Dashboard from './components/Dashboard/Dashboard';
 import PositionsManager from './components/Positions/PositionsManager';
 import NewApplicationWizard from './components/Applications/NewApplicationWizard';
-import { ApplicationsList, ApplicationDetail, SearchView, SettingsView } from './components/Stubs';
+import ApplicationDetail from './components/Applications/ApplicationDetail';
+import { ApplicationsList, SearchView, SettingsView } from './components/Stubs';
 
 function App() {
   return (
