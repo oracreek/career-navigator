@@ -1,0 +1,28 @@
+{
+  "name": "career-navigator-backend",
+  "version": "1.0.0",
+  "description": "Career Navigator API - Cloudflare Workers backend",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create career-navigator-db",
+    "db:init": "wrangler d1 execute career-navigator-db --file=../schema.sql",
+    "db:migrate": "wrangler d1 execute career-navigator-db --file=../schema.sql",
+    "secret:set": "wrangler secret put ANTHROPIC_API_KEY"
+  },
+  "keywords": [
+    "career",
+    "job-search",
+    "ai",
+    "cloudflare-workers"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "itty-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.78.0"
+  }
+}
